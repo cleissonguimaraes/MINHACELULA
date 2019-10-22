@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app02.TipoPagina.Navigation.Pagina3"
+             Title="MEMBROS"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout >
+            <ListView x:Name="listPersonal" ItemSelected="Editar">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Spacing="-6" Margin="15,0,0,0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Label Text="{Binding Nome}" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding funcao}" TextColor="#116EA3" FontSize="12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                                <!--Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition  Width="100" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                    <StackLayout Margin="15,0,0,0" Grid.Column="0">
+                                        <Label Text="{Binding Nome}" TextColor="Black" FontSize="20"/>
+                                        <Label  Text="{Binding funcao}" FontAttributes="Italic" TextColor="LightBlue" FontSize="12"/>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="30">
+
+                                    </StackLayout>
+
+                                </Grid-->
+                            </ViewCell>
+                        </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="2">
+                <Button Clicked="NovoMembro" Text="Adicionar Membro"  TextColor="#116EA3" BackgroundColor="Transparent"
+                        FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+                <Image Source="plus.ico" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="NovoMembro"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </StackLayout>
+
+
+        </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

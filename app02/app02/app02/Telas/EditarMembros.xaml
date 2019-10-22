@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="MEMBROS"
+             x:Class="app02.Telas.EditarMembros">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="15">
+            <StackLayout Spacing="30">
+                <Label x:Name="titulo" Text="Editar Membro" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtNome"  Placeholder="Nome" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtEndereco" Placeholder="Endereço" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtBairro" Placeholder="Bairro" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry Keyboard="Telephone" Placeholder="Telefone" x:Name="txtTelefone" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <Picker x:Name="txtFuncao" Title="Função" TextColor="Black">
+                <Picker.Items>
+                    <x:String>Membro</x:String>
+                    <x:String>Visitante</x:String>
+                    <x:String>Lider</x:String>
+                    <x:String>Let</x:String>
+                    <x:String>Secretário</x:String>
+                    <x:String>Anfitrião</x:String>
+                    <x:String>Irmão do Lanche</x:String>
+                </Picker.Items>
+                
+            </Picker>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <Button Text="Enviar" TextColor="White" BackgroundColor="#116EA3"
+                        FontSize="16" FontAttributes="Bold" BorderRadius="10" Clicked="Salvar"/>
+                <Button Text="Excluir" TextColor="White" BackgroundColor="Red"
+                        FontSize="16" FontAttributes="Bold" BorderRadius="10" Clicked="Excluir"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

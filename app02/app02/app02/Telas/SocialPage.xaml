@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:social="clr-namespace:app02.Telas"
+                  Title="MinhaCelula"
+             x:Class="app02.Telas.SocialPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="MinhaCelula">
+
+            <StackLayout>
+                <Button Text="Login" FontSize="14" Clicked="GoLoginPage" BackgroundColor="Transparent"/>
+                <Button Text="Células" FontSize="14" Clicked="GoCelulaPage" BackgroundColor="Transparent"/>
+                <Button Text="Letras de Músicas" FontSize="14" Clicked="GoMusicaPage" BackgroundColor="Transparent"/>
+
+            </StackLayout>
+
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+
+        <NavigationPage>
+            <x:Arguments>
+                
+
+                <social:TimelinePage/>
+            </x:Arguments>
+        </NavigationPage>
+
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

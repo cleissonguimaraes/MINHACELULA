@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app02.Telas.LoginPage">
+    <ContentPage.Content >
+        <StackLayout BackgroundColor="White">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
+                <Image Source="logo.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+                <Entry x:Name="txtUser" FontAttributes="Italic" VerticalOptions="Center" Text="{Binding usuario}" TextColor="#116EA3" Placeholder="Digite seu usuário" PlaceholderColor="#116EA3" BackgroundColor="White" FontSize="18" />
+                <Entry x:Name="txtPswd" FontAttributes="Italic" VerticalOptions="Center" IsPassword="True" Text="{Binding senha}" TextColor="#116EA3" Placeholder="Digite sua senha" PlaceholderColor="#116EA3" BackgroundColor="White" FontSize="18"/>
+                <Button Text="Entrar" BackgroundColor="#116EA3" TextColor="White" BorderRadius="5" VerticalOptions="Center" Clicked="GoTabbed"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Esqueci minha senha" FontSize="16" TextColor="#116EA3" FontAttributes="Italic" BackgroundColor="Transparent"/>
+            </StackLayout>
+            
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+                <Button Text="Navegar Sem Login" BackgroundColor="#116EA3" TextColor="White" BorderRadius="5" Clicked="GoSocialPage"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

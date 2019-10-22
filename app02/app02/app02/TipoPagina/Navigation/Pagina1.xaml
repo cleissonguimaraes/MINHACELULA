@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app02.TipoPagina.Navigation.Pagina1"
+             Title="FREQUÊNCIA"
+             x:Name="Content1"
+ 
+             >
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout >
+                <ListView x:Name="listFrequency">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                               
+                                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Label Margin="6" Text="{Binding dataRelatorio}" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="2">
+                    <Button Clicked="novoRelatorio" Text="Novo Relatório"  TextColor="#116EA3" BackgroundColor="Transparent"
+                        FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Image Source="plus.ico" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="novoRelatorio"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </StackLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+
+
+
+
+
+        <!--StackLayout >
+            <StackLayout VerticalOptions="Start">
+                <Button HorizontalOptions="Center" Text="Novo" FontSize="18" BackgroundColor="Transparent" Clicked="novoRelatorio"/>
+                <BoxView HeightRequest="2" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start">
+                <Button HorizontalOptions="Center" Text="Editar/Exibir" FontSize="18" BackgroundColor="Transparent" />
+                <BoxView HeightRequest="2" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start">
+                <Button HorizontalOptions="Center" Text="Excluir" FontSize="18" BackgroundColor="Transparent"/>
+                <BoxView HeightRequest="2" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+
+
+        </StackLayout-->
+
+
+    </ContentPage.Content>
+</ContentPage>

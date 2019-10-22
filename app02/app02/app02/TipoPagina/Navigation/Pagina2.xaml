@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app02.TipoPagina.Navigation.Pagina2"
+             Title="CÉLULA"
+             x:Name="Content2"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout Padding="15">
+            <StackLayout VerticalOptions="Start" Spacing="10">
+                <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="F5 em Cristo I" FontAttributes="Bold" FontSize="24" BackgroundColor="Transparent"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start" Spacing="10">
+                <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="Rua Pedro II, 672 A, Filadelfia"  FontSize="20" BackgroundColor="Transparent"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start" Spacing="10">
+                <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="Sábado" FontSize="20" BackgroundColor="Transparent"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Start" Spacing="10">
+                <Label TextColor="Black" HorizontalOptions="StartAndExpand" Text="17:30" FontSize="20" BackgroundColor="Transparent"/>
+            </StackLayout>
+
+        </StackLayout>
+
+        <BoxView BackgroundColor="LightGray" HeightRequest="4" HorizontalOptions="FillAndExpand"/>
+
+            <ScrollView>
+            
+            <StackLayout Padding="2">
+
+            <StackLayout Margin="1" Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="-6">
+                            <Label Text="Kimberli" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label Text="líder" TextColor="#116EA3" FontSize="14" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+            </StackLayout>
+                    <StackLayout Margin="1" Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="-6">
+                            <Label Text="Thais" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label Text="Let" TextColor="#116EA3" FontSize="14" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                    <StackLayout Margin="1" Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="-6">
+                            <Label Text="Thamara" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                            <Label Text="secretária" TextColor="#116EA3" FontSize="14" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout Margin="1" Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="-6">
+                            <Label Text="Thalita" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label Text="anfitrião" TextColor="#116EA3" FontSize="14" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout Margin="1" Orientation="Horizontal">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="-6">
+                            <Label Text="Alanda" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                            <Label Text="irmão do lanche" TextColor="#116EA3" FontSize="14" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+
+
+                    </StackLayout>
+            </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
