@@ -13,10 +13,19 @@
                 <Entry x:Name="nome" Placeholder="Nome" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
+                <Entry x:Name="txtCelulaId" IsVisible="False" Text=""/>
+            </StackLayout>
+            <StackLayout Spacing="10">
                 <Entry x:Name="endereco" Placeholder="Endereço" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
+                <Entry x:Name="numero" Placeholder="Numero" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
                 <Entry x:Name="bairro" Placeholder="Bairro" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="cidade" Placeholder="Cidade" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
                 <Entry x:Name="telefone" Keyboard="Telephone"  Placeholder="Telefone" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>

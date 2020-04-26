@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.mapas" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="COM.MINHACELULA.MAPAS" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -8,10 +8,15 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
+  <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <permission android:name="COM.MINHACELULA.MAPAS.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <uses-permission android:name="COM.MINHACELULA.MAPAS.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- Allow the application to access Google web-based services. -->
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 	<application android:label="app02.Android">
-    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDMioE2L7UnAVgdP99Lx0niLAn5rk6RptM" />
-    <!-->uses-library android:name="org.apache.http.legacy" android:required="false" /-->
-  </application>
-
-
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA4XNYuZ95Mc58sUdHv2t5KTYw6_PcJ3KI" />
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+	</application>
 </manifest>

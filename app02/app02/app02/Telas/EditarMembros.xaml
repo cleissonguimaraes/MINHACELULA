@@ -9,13 +9,25 @@
                 <Label x:Name="titulo" Text="Editar Membro" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
-                <Entry x:Name="txtNome"  Placeholder="Nome" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+                <Entry x:Name="txtNome" Placeholder="Nome" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtId" IsVisible="False"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtCelulaId" IsVisible="False"/>
             </StackLayout>
             <StackLayout Spacing="10">
                 <Entry x:Name="txtEndereco" Placeholder="Endereço" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
+                <Entry x:Name="txtNumero" Placeholder="Numero" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
                 <Entry x:Name="txtBairro" Placeholder="Bairro" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Entry x:Name="txtCidade" Placeholder="Cidade" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
             </StackLayout>
             <StackLayout Spacing="10">
                 <Entry Keyboard="Telephone" Placeholder="Telefone" x:Name="txtTelefone" PlaceholderColor="LightGray" FontSize="18" TextColor="Black"/>
@@ -34,7 +46,7 @@
             </Picker>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <Button Text="Enviar" TextColor="White" BackgroundColor="#116EA3"
-                        FontSize="16" FontAttributes="Bold" BorderRadius="10" Clicked="Salvar"/>
+                        FontSize="16" FontAttributes="Bold" BorderRadius="10"/>
                 <Button Text="Excluir" TextColor="White" BackgroundColor="Red"
                         FontSize="16" FontAttributes="Bold" BorderRadius="10" Clicked="Excluir"/>
 

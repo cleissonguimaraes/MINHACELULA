@@ -13,8 +13,9 @@
                     <DataTemplate>
                             <ViewCell>
                                 <StackLayout Spacing="-6" Margin="15,0,0,0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                    <Label Text="{Binding Nome}" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                                    <Label Text="{Binding funcao}" TextColor="#116EA3" FontSize="12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding Name}" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding Funcao}" TextColor="#116EA3" FontSize="12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding PessoaId}" IsVisible="False"/>
                                 </StackLayout>
                                 <!--Grid>
                                     <Grid.ColumnDefinitions>

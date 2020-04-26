@@ -7,6 +7,25 @@
             <Label Text="Aqui é sua timeline!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Vertical" Padding="10,5,10,0">
+                <ListView x:Name="listaUsuarios" BackgroundColor="Aqua" SeparatorColor="Blue">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!--ViewCell.ContextActions>
+                                    <MenuItem Clicked="OnAtualizar" CommandParameter="{Binding .}" Text="Atualizar" />
+                                    <MenuItem Clicked="OnDeletar" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="True" />
+                                </-->
+                                <StackLayout Padding="10,10" Orientation="Horizontal">
+                                    <Label Text="{Binding Nome}" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Email}" TextColor="Blue" HorizontalOptions="Center"/>
+                                    <Label Text="{Binding Password}" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

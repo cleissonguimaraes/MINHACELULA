@@ -76,7 +76,7 @@
 
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                 <Button Text="Enviar" TextColor="White" BackgroundColor="#116EA3"
-                        FontSize="16" FontAttributes="Bold" BorderRadius="10" Clicked="Salvar" />
+                        FontSize="16" FontAttributes="Bold" BorderRadius="10" />
                 
             </StackLayout>
 
